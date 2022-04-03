@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+
+.fundo{
+    /*background-image: linear-gradient(45deg,black,crimson);*/
+    background-image: url("imagens/mathematics_image.jpg");
+    height:100%;
+    color: rgba(8, 8, 8, 0.5);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    background-size: cover;    
+}
+
+.autor{
+    font-family: arial;
+    position: absolute;
+    color: rgb(255,255,255);
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #0707075b;
+    border-top:1px solid rgba(255,255,255,0.8);
+    border-bottom:1px solid rgba(3, 3, 3, 0.8);
+    border-left:1px solid rgba(7, 7, 7, 0.8);
+    border-right:1px solid rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);    
+}
+
+.calculadora{
+    position: absolute;
+    width: 500px;
+    height: 510px;
+    color: rgba(255, 255, 255, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #0707075b;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 254, 254, 0.5);
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.btn{
+    font-size: 20px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+    border-radius:none;
+    color: white;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+table{
+    margin-left: 45px;
+}
+.btn:hover{
+    background-color:black;
+}
+
+#resultado{
+    background-color: white;
+    width: 407px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+#campo{
+    display: none;
+    background-color: white;
+    width: 407px;
+    height: 150px;
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    vertical-align: text-bottom;
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    table{
+        margin-left: 19px;
+    }
+    .calculadora{
+        width: 300px;
+        height: 370px;
+        margin-left: 1px;
+    }
+    #resultado{
+        width: 245px;
+        height: 30px;
+        margin-left: 20px;
+    }
+    #campo{
+        width: 245px;
+        height: 150px;
+        margin-left: 19px;
+    }
+    .btn{
+        width: 60px;
+        height: 60px;
+        margin-top: 2px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
